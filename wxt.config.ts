@@ -9,7 +9,7 @@ export default defineConfig({
   }),
   manifest: ({ browser, manifestVersion, mode, command }) => {
     return {
-      name: 'ደባልቅ (Amharic Lorem ipsum)',
+      name: 'ደባልቅ (Debalq)',
       version: '0.0.1',
       description: 'Amharic Lorem Ipsum generator',
      
