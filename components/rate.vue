@@ -5,6 +5,10 @@
   const showRate = ref(false);
   const hoveredIndex = ref<number>(-1);
   const rating = (index: number) => {
+    window.open(
+      "https://chromewebstore.google.com/detail/%E1%8B%B0%E1%89%A3%E1%88%8D%E1%89%85-debalq/dapeihdfmfopmmaggleddellioaecnbm/reviews/my-review?hl=en-US",
+      "_blank"
+    );
     hoveredIndex.value = index;
     showRate.value = false;
   };

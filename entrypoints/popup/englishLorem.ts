@@ -1,13 +1,13 @@
 // src/composables/useLorem.ts
 import { ref } from "vue";
 import amharicLoremIpsumJson from "@/assets/amharic.json";
-
-export function useLorem() {
+import englishLoremIpsumJson from "@/assets/english.json";
+export function englishLorem() {
   const generatedText = ref<string[]>([]);
-  const clasicJson = amharicLoremIpsumJson.classic;
-  const marketingJson = amharicLoremIpsumJson.marketing;
-  const ictJson = amharicLoremIpsumJson.ict;
-  const scienceJson = amharicLoremIpsumJson.science;
+  const clasicJson = englishLoremIpsumJson.classic;
+  const marketingJson = englishLoremIpsumJson.marketing;
+  const ictJson = englishLoremIpsumJson.ict;
+  const scienceJson = englishLoremIpsumJson.science;
 
     const calsicLorem = (amount: number, option: string) => {
         console.log("option", option);

@@ -76,7 +76,7 @@
       <button
         type="button"
         @click="generateText"
-        class="w-full flex items-center justify-center gap-x-3 text-[1rem] bg-green-600 text-white font-semibold rounded-md p-2"
+        class="w-full flex items-center cursor-pointer justify-center gap-x-3 text-[1rem] bg-green-600 text-white font-semibold rounded-md p-2"
       >
         <Icon icon="streamline:ai-generate-variation-spark"> </Icon>
         Generate Text
@@ -96,7 +96,7 @@
       <button
         @click="copieText"
         type="button"
-        class="w-full flex items-center justify-center gap-x-3 text-[1rem] ring-1 ring-green-600 text-green-600 font-semibold rounded-md p-2"
+        class="w-full cursor-pointer hover:shadow hover:shadow-green-600 flex items-center justify-center gap-x-3 text-[1rem] ring-1 ring-green-600 text-green-600 font-semibold rounded-md p-2"
       >
         <Icon icon="mingcute:copy-line"> </Icon>
         {{ copied ? "Copied" : "Copy" }}

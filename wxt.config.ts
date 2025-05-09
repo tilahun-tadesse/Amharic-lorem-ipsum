@@ -10,11 +10,9 @@ export default defineConfig({
   manifest: ({ browser, manifestVersion, mode, command }) => {
     return {
       name: 'ደባልቅ (Debalq)',
-      version: '0.0.1',
+      version: '1.0.1',
       description: 'Amharic Lorem Ipsum generator',
-     
-      permissions: ['storage'],
-     
+          
     };
   },
 });
