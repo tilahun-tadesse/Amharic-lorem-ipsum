@@ -47,6 +47,11 @@
 <template>
   <section
     class="flex flex-col justify-start items-start p-3 h-screen w-[420px]"
+    :class="
+      englishGeneratedText.length > 0 || generatedText.length > 0
+        ? 'min-h-[590px]'
+        : 'min-h-[510px]'
+    "
     @mouseenter="isHovered = true"
     @mouseleave="isHovered = false"
   >
@@ -63,7 +68,7 @@
             :class="[selectedTab === 0 ? 'text-green-600' : 'text-yellow-600']"
           >
             <Tab
-              class="focus:outline-none"
+              class="focus:outline-none cursor-pointer group relative"
               :class="
                 selectedTab === 0
                   ? 'text-green-600 border-b-2 border-green-600'
@@ -71,9 +76,12 @@
               "
             >
               Amharic
+              <!-- <span class="absolute invisible group-hover:visible top-0 left-4">
+                amharic lorem ipsum
+              </span> -->
             </Tab>
             <Tab
-              class="focus:outline-none"
+              class="focus:outline-none cursor-pointer"
               :class="
                 selectedTab === 1
                   ? 'text-green-600 border-b-2 border-green-600'
